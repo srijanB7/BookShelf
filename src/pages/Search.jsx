@@ -17,17 +17,19 @@ export const Search = () => {
                   book.title.toLowerCase().includes(searchValue.toLowerCase())
               );
 
+    
+
     return (
         <div className="search-container">
             <Link to="/">Home</Link>
-            <input type="text" onChange={handleSearch} className="search-box"/>
+            <input type="text" onChange={handleSearch} className="search-box" />
             <div className="search-content">
                 {searchedBooks.length > 0 ? (
                     searchedBooks.map((book) => (
                         <BookCard key={book.id} {...book} />
                     ))
                 ) : (
-                    <p>Search Here</p>
+                    <p>{searchValue === "" ? `Search Here` : `No results Found`}</p>
                 )}
             </div>
         </div>
