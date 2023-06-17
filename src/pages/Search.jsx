@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { BookContext } from "../context/BookContext";
-import { BookCard } from "../components/bookcard/BookCard";
+import { BookCard } from "../components/BookCard/BookCard";
 
 export const Search = () => {
     const { allBooks } = useContext(BookContext);
