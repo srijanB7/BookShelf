@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { BookContext } from "../context/BookContext";
-import { BookCard } from "../components/bookcard/BookCard";
+import { BookCard } from "../components/BookCard/BookCard";
 import { Link } from "react-router-dom";
 
 export const Home = () => {
